@@ -23,7 +23,7 @@ body html {
 .grid .unit {
   float: left;
   width: 100%;
-  padding: 10px;
+  padding: 20px;
 }
 
 /* This ensures the outer gutters are equal to the (doubled) inner gutters. */
@@ -99,6 +99,35 @@ body html {
   display: none !important;
 }
 
+
+/* Responsive Stuff */
+@media screen and (max-width: 1000px) {
+  /* Stack anything that isn’t full-width on smaller screens 
+     and doesn't provide the no-stacking-on-mobiles class */
+  .grid:not(.no-stacking-on-mobiles) > .unit {
+    width: 50% !important;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .unit .grid .unit {
+    /*padding-left: 0px;*/
+    /*padding-right: 0px;*/
+  }
+
+  /* Sometimes, you just want to be different on small screens */
+  .center-on-mobiles {
+    /*text-align: center !important;*/
+  }
+  .hide-on-mobiles {
+    /*display: none !important;*/
+  }
+  .only-on-mobiles {
+    /*display: block !important;*/
+  }
+}
+
+
+
 /* Responsive Stuff */
 @media screen and (max-width: 568px) {
   /* Stack anything that isn’t full-width on smaller screens 
@@ -126,10 +155,45 @@ body html {
 }
 
 /* Expand the wrap a bit further on larger screens */
-@media screen and (min-width: 1180px) {
+@media screen and (min-width: 1300px) {
   .wider .grid,
   .grid.wider {
-    max-width: 1180px;
+    /*max-width: 1180px;*/
     margin: 0 auto;
+  }
+    .grid:not(.no-stacking-on-mobiles) > .unit {
+    width: 33% !important;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 60px;
+
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .wider .grid,
+  .grid.wider {
+    /*max-width: 1180px;*/
+    margin: 0 auto;
+  }
+    .grid:not(.no-stacking-on-mobiles) > .unit {
+    width: 33% !important;
+    padding-left: 60px;
+    padding-right: 60px;
+        padding-bottom: 120px;
+
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .wider .grid,
+  .grid.wider {
+    /*max-width: 1180px;*/
+    margin: 0 auto;
+  }
+    .grid:not(.no-stacking-on-mobiles) > .unit {
+    width: 25% !important;
+   
+
   }
 }

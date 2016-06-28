@@ -12,7 +12,7 @@ $mainname = 'main.gif';
 
 
 	?>
-	<div class=" unit w-1-4 project container super" onclick="<?php echo $onclick ?>" id='<?php echo 'project' . $id ?>'>
+	<div class=" unit w-1-3 project container super" onclick="<?php echo $onclick ?>" id='<?php echo 'project' . $id ?>'>
 	
 		<div class="unit project box <?php echo $_SESSION['projects'][$id]->type; ?>">
 		<div class='rauschenberg' style="display: none;z-index:50000;position: absolute; top:0px;left:0px;width: 100%;height: 100%; background-image:url('backtiles.gif')">
@@ -73,13 +73,12 @@ function image($path, $columns,$description){
 
 
 <?php 
-function text($text,$columns = 'whole'){
+function text($text,$columns = 'whole',$align = 'left'){
 ?>
-	<div class="unit <?php echo $columns ?> regular"> 
+	<div class="unit <?php echo $columns ?> regular <?php echo $align ?> "> 
 		<?php echo $text ?>
 	</div>
-	<div class="unit whole regular"><?php echo $description ?></div>
-	</div>
+
 	</div>
 
 
