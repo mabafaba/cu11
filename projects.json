@@ -1,0 +1,137 @@
+{"projects":[
+{
+    "id": 0,
+    "wid" : "sisy",
+
+    "title":"Sight Symphony",
+    "description":"Translating 3D images into sound for the visually impaired",
+
+    "type" : "do",
+    "keywords" : ["prototype","design","making","entrepreneurship"]
+    
+    },{
+    "id": 1,
+    "wid" : "p1",
+
+    "title":"Multiscale Entropy in the Spatial Context of Cities",
+    "description":"scri ption1. descr iption1; desc ription1, description1asd ddsa sda df. ",
+
+    "type" : "think",
+    "keywords" : ["data","cities","research","thesis","analysis","diversity","places","metrics"]
+
+    },
+    { 
+    "id": 2,
+    "wid" : "tube",
+
+    "title":"Redundancy in the London Tube Network",
+    "description":"Measures of centrality in the London tube network",
+
+    "type" : "think",
+    "keywords" : ["data","cities","research","analysis","networks","transport"]
+
+    },
+    { 
+    "id": 3,
+    "wid" : "pois",
+
+    "title":"Points of Interest",
+    "description":"understanding places through their relationship to points of interest",
+    
+    "type" : "think",
+    "keywords" : ["data","cities","analysis","places","osm","metrics"]
+
+    },
+    { 
+    "id": 4,
+    "wid" : "ipr",
+
+    "title":"Building outline / area ratio",
+    "description":"Quantifiying the interface between buildings and the public space",
+        
+    "type" : "think",
+    "keywords" : ["cities","data","research","analysis","metrics"]
+    
+    },
+    { 
+    "id": 5,
+    "wid" : "chinawalls",
+
+    "title":"Patterns of Time",
+    "description":"A collection of patterns found on walls in villages in south east China",
+
+    "type" : "play",
+    "keywords" : ["photography","complexity"]
+    
+    },
+    { 
+    "id": 6,
+    "wid" : "soul",
+
+    "title":"Soul Universe",
+    "description":"Communicating emotions digitally: An interactive installation",
+
+    "type" : "do",
+    "keywords" : ["data","design"]
+
+    },
+    { 
+    "id": 7,
+    "wid" : "hackspace",
+
+    "title":"Urban Scale Hackspaces",
+    "description":"What would it take to transform a district into an urban scale hackspace?",
+
+    "type" : "think",
+    "keywords" : ["design","analysis","798","cities"]
+
+    
+    },
+    { 
+    "id": 8,
+    "wid" : "traffic",
+
+    "title":"Wasted Space",
+    "description":"90% of the time, 4 out of 6 car lanes of Karl-Marx-Allee are wasted space.",
+
+    "type" : "think",
+    "keywords" : ["data","design","analysis","transport","cities"]
+
+        },
+    { 
+    "id": 9,
+    "wid" : "bartlett",
+
+    "title":"Research Newtork",
+    "description":"Building a multilayer Network of Researchers in the Bartlett, UCL",
+
+    "type" : "think",
+    "keywords" : ["data","design","analysis","transport","cities"]
+
+        },
+    { 
+    "id": 10,
+    "wid" : "forest",
+
+    "title":"Trees",
+    "description":"Attempted visual complexity",
+
+    "type" : "do",
+    "keywords" : ["processing","design","visual","art","processing","complexity","fractal"],
+    "url" :"./projects/forest/forest.php"
+        },
+    { 
+    "id": 10,
+    "wid" : "bye",
+
+    "title":"goodbye.js",
+    "description":"A self destruction javascript plugin for websites",
+
+    "type" : "do",
+    "keywords" : ["processing","design","visual","art","processing","complexity","fractal"],
+    "onclick" :"selfdestruct_start()",
+    "url":"#none"
+        }
+
+
+]}
