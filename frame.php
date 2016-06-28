@@ -28,7 +28,8 @@ $_SESSION['projects'] =json_decode(file_get_contents('./projects.json'))->projec
 
 </head>
 <body>
-<div style="position:absolute;left:10%;width: 80%;padding-top: 10%;padding-bottom: 10%">
+<div id="footer-cover-div">
+<div style="position:relative;left:10%;width: 80%;padding-top: 10%;padding-bottom: 10%">
 		<div id="placeholder" style="position: relative;height:30px;width: 100%"></div>
 
 	<div id="content" style="text-align: left;">
@@ -39,6 +40,12 @@ $_SESSION['projects'] =json_decode(file_get_contents('./projects.json'))->projec
 		<div id="foot" class="grid"><?php //include_once('foot.php') ?></div>
 	</div>
 	</div>
+</div>
+<div class="footer">
+<div style="padding:30px;text-align:center">
+<img src="./eye-mini.gif" onclick="rotatethings()" width="50px" height="50px" style="cursor:none" >
+</div>
+</div>
 
 </body>
 </html>
@@ -122,10 +129,38 @@ console.log(charGroupSize);
 
 <?php $_SESSION['loaded'] = true ?>
 
+<!-- 
+trigger something when page bottom is reached:
+<script type="text/javascript">
+console.log('test');
+$(window).scroll(function(){
+    if ($(window).scrollTop() + $(window).height() >= $(document).height() - 300){
+  console.log("bottom of the page reached!");
+  loaded[pages[current+1]] = loaded[pages[current+1]] + 1; 
+    
+        if(loaded[pages[current+1]] <= 1)
+             loadMoreContent(current+1);
+    }
+});
+
+</script> -->
+<script type="text/javascript">
+function rotatethings(){
+	console.log(Math.random() * 3600 *2 -(3600/2))
+		$('*').not( "body" ).css('overflow','visible');
+		// $( "body" ).css('overflow','scroll');
+		$( "html" ).css('overflow','scroll');
+
+	// $('*').css('-webkit-transition','transform 15s  cubic-bezier(0.6, -0.28, 0.735, 0.045)	');
+		$('*').not( "body" ).css('-webkit-transition','transform 15s  ease-in	');
+		$('*').not( "body" ).css('-webkit-transform-origin','50%,50%');
 
 
 
 
-
-
-
+	$('*').not( "body" ).css("-webkit-transform", function () {
+  var rand = (Math.random() * 3600*2) -(3600);
+  return 'rotate('+rand/10+'deg) translate(0px,'+rand/100+'px)';  
+});
+}
+</script>

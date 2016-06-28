@@ -13,6 +13,8 @@ body, html {
 	font-variant: normal;
 	line-height: 20px;
 	height: 100%;
+	padding: 0px;
+	margin: 0px;
 /*background-color: black;*/
 }
 .headline{
@@ -369,3 +371,30 @@ box-shadow: 10px 10px 0px -5px #FF00FF;;
 .image-container{
 background-image: url('backtiles.gif');
 }
+
+
+
+
+
+.footer{
+position: fixed;
+bottom: 0px;
+background-color: black;
+color: white;
+width: 100%;
+height: 100px;
+margin: 0px;
+z-index: -1;
+cursor:none;
+}
+
+#footer-cover-div{
+	position:relative;
+	width:100%;
+	background-color:white;
+	padding-bottom: 100px;
+	margin-bottom: 100px;
+}
+
+
+
