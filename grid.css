@@ -105,10 +105,17 @@ body html {
   /* Stack anything that isn’t full-width on smaller screens 
      and doesn't provide the no-stacking-on-mobiles class */
   .grid:not(.no-stacking-on-mobiles) > .unit {
+
+  }
+
+
+/*special smooth responsiveness with 1 - 4 columns independent from w-x-x class*/
+ .unit.project.container.super{
+
     width: 50% !important;
     padding-left: 20px;
     padding-right: 20px;
-  }
+}
   .unit .grid .unit {
     /*padding-left: 0px;*/
     /*padding-right: 0px;*/
@@ -133,6 +140,14 @@ body html {
   /* Stack anything that isn’t full-width on smaller screens 
      and doesn't provide the no-stacking-on-mobiles class */
   .grid:not(.no-stacking-on-mobiles) > .unit {
+    width: 100% !important;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /*special smooth responsiveness with 1 - 4 columns independent from w-x-x class*/
+
+   .unit.project.container.super{
     width: 100% !important;
     padding-left: 20px;
     padding-right: 20px;
@@ -162,6 +177,11 @@ body html {
     margin: 0 auto;
   }
     .grid:not(.no-stacking-on-mobiles) > .unit {
+   }
+
+   /*special smooth responsiveness with 1 - 4 columns independent from w-x-x class*/
+
+   .unit.project.container.super{
     width: 33% !important;
     padding-left: 30px;
     padding-right: 30px;
@@ -177,12 +197,18 @@ body html {
     margin: 0 auto;
   }
     .grid:not(.no-stacking-on-mobiles) > .unit {
-    width: 33% !important;
+
+
+  }
+
+  /*special smooth responsiveness with 1 - 4 columns independent from w-x-x class*/
+
+   .unit.project.container.super{
+        width: 33% !important;
     padding-left: 60px;
     padding-right: 60px;
         padding-bottom: 120px;
-
-  }
+}
 }
 
 @media screen and (min-width: 1800px) {
@@ -192,8 +218,35 @@ body html {
     margin: 0 auto;
   }
     .grid:not(.no-stacking-on-mobiles) > .unit {
-    width: 25% !important;
    
 
   }
+
+
+/*special smooth responsiveness with 1 - 4 columns independent from w-x-x class*/
+
+   .unit.project.container.super{
+      width: 25% !important;
+
 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
