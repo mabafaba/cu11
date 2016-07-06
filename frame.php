@@ -41,9 +41,11 @@ $_SESSION['projects'] =json_decode(file_get_contents('./projects.json'))->projec
 	</div>
 	</div>
 </div>
+<div id="extend-scroll-area-for-safari"></div>
+
 <div class="footer">
 <div style="padding:30px;text-align:center">
-<img src="./eye-mini.gif" onclick="rotatethings()" width="50px" height="50px" style="cursor:none" >
+<img src="./eye-mini.gif" onclick="rotatethings()" width="50px" height="50px" style="" >
 </div>
 </div>
 
@@ -152,15 +154,43 @@ function rotatethings(){
 		$( "html" ).css('overflow','scroll');
 
 	// $('*').css('-webkit-transition','transform 15s  cubic-bezier(0.6, -0.28, 0.735, 0.045)	');
-		$('*').not( "body" ).css('-webkit-transition','transform 15s  ease-in	');
-		$('*').not( "body" ).css('-webkit-transform-origin','50%,50%');
+		$('*').not( "body" ).css('transition','-webkit-transform 15s  ease-in	');
+		$('*').not( "body" ).css('transition','-moz-transform 15s  ease-in	');
+		$('*').not( "body" ).css('transition','-ms-transform 15s  ease-in	');
+		$('*').not( "body" ).css('transition','-o-transform  15s  ease-in	');
+		$('*').not( "body" ).css('transition','transform	 15s  ease-in	');
 
-
+		$('*').not( "body" ).css('-webkit-transform','50%,50%');
+		$('*').not( "body" ).css('-moz-transform','50%,50%');
+		$('*').not( "body" ).css('-ms-transform','50%,50%');
+		$('*').not( "body" ).css('-o-transform','50%,50%');
+		$('*').not( "body" ).css('transform','50%,50%');
 
 
 	$('*').not( "body" ).css("-webkit-transform", function () {
   var rand = (Math.random() * 3600*2) -(3600);
   return 'rotate('+rand/10+'deg) translate(0px,'+rand/100+'px)';  
 });
+
+	$('*').not( "body" ).css("-moz-transform", function () {
+  var rand = (Math.random() * 3600*2) -(3600);
+  return 'rotate('+rand/10+'deg) translate(0px,'+rand/100+'px)';  
+});
+
+	$('*').not( "body" ).css("-ms-transform", function () {
+  var rand = (Math.random() * 3600*2) -(3600);
+  return 'rotate('+rand/10+'deg) translate(0px,'+rand/100+'px)';  
+});
+
+	$('*').not( "body" ).css("-o-transform", function () {
+  var rand = (Math.random() * 3600*2) -(3600);
+  return 'rotate('+rand/10+'deg) translate(0px,'+rand/100+'px)';  
+});
+
+	$('*').not( "body" ).css("transform", function () {
+  var rand = (Math.random() * 3600*2) -(3600);
+  return 'rotate('+rand/10+'deg) translate(0px,'+rand/100+'px)';  
+});
 }
+
 </script>

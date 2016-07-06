@@ -121,7 +121,7 @@
     "url" :"./projects/forest/forest.php"
         },
     { 
-    "id": 10,
+    "id": 11,
     "wid" : "bye",
 
     "title":"goodbye.js",
@@ -131,7 +131,22 @@
     "keywords" : ["processing","design","visual","art","processing","complexity","fractal"],
     "onclick" :"selfdestruct_start()",
     "url":"#none"
+        },
+    { 
+    "id": 10,
+    "wid" : "bible",
+
+    "title":"Technology Ideology",
+    "description":"Every good Ideology needs a book.",
+
+    "type" : "do",
+    "keywords" : ["smart","bullshit","play","design", "data"],
+    "onclick" :""
         }
+
+
+
+
 
 
 ]}
