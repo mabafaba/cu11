@@ -28,6 +28,7 @@ $_SESSION['projects'] =json_decode(file_get_contents('./projects.json'))->projec
 
 </head>
 <body>
+<div style='color:red;transform: rotate(-90deg);position: fixed;z-index:10000;left:-90px;top:20em;'>This page is under construction.</div>
 <div id="footer-cover-div">
 <div style="position:relative;left:10%;width: 80%;padding-top: 10%;padding-bottom: 10%">
 		<div id="placeholder" style="position: relative;height:30px;width: 100%"></div>
@@ -149,47 +150,47 @@ $(window).scroll(function(){
 <script type="text/javascript">
 function rotatethings(){
 	console.log(Math.random() * 3600 *2 -(3600/2))
-		$('*').not( "body" ).css('overflow','visible');
+		$('.grid').find('*').not( "body" ).css('overflow','visible');
 		// $( "body" ).css('overflow','scroll');
 		$( "html" ).css('overflow','scroll');
 
 	// $('*').css('-webkit-transition','transform 15s  cubic-bezier(0.6, -0.28, 0.735, 0.045)	');
-		$('*').not( "body" ).css('transition','-webkit-transform 15s  ease-in	');
-		$('*').not( "body" ).css('transition','-moz-transform 15s  ease-in	');
-		$('*').not( "body" ).css('transition','-ms-transform 15s  ease-in	');
-		$('*').not( "body" ).css('transition','-o-transform  15s  ease-in	');
-		$('*').not( "body" ).css('transition','transform	 15s  ease-in	');
+		$('.grid').find('*').not( "body" ).css('transition','-webkit-transform 15s  ease-in	');
+		$('.grid').find('*').not( "body" ).css('transition','-moz-transform 15s  ease-in	');
+		$('.grid').find('*').not( "body" ).css('transition','-ms-transform 15s  ease-in	');
+		$('.grid').find('*').not( "body" ).css('transition','-o-transform  15s  ease-in	');
+		$('.grid').find('*').not( "body" ).css('transition','transform	 15s  ease-in	');
 
-		$('*').not( "body" ).css('-webkit-transform','50%,50%');
-		$('*').not( "body" ).css('-moz-transform','50%,50%');
-		$('*').not( "body" ).css('-ms-transform','50%,50%');
-		$('*').not( "body" ).css('-o-transform','50%,50%');
-		$('*').not( "body" ).css('transform','50%,50%');
+		$('.grid').find('*').not( "body" ).css('-webkit-transform','50%,50%');
+		$('.grid').find('*').not( "body" ).css('-moz-transform','50%,50%');
+		$('.grid').find('*').not( "body" ).css('-ms-transform','50%,50%');
+		$('.grid').find('*').not( "body" ).css('-o-transform','50%,50%');
+		$('.grid').find('*').not( "body" ).css('transform','50%,50%');
 
 
-	$('*').not( "body" ).css("-webkit-transform", function () {
+	$('.grid').find('*').not( "body" ).css("-webkit-transform", function () {
   var rand = (Math.random() * 3600*2) -(3600);
-  return 'rotate('+rand/10+'deg) translate(0px,'+rand/100+'px)';  
+  return 'skewX('+Math.random()*100+'deg) rotate('+rand/10+'deg) translate(0px,'+rand/100+'px)';  
 });
 
-	$('*').not( "body" ).css("-moz-transform", function () {
+	$('.grid').find('*').not( "body" ).css("-moz-transform", function () {
   var rand = (Math.random() * 3600*2) -(3600);
-  return 'rotate('+rand/10+'deg) translate(0px,'+rand/100+'px)';  
+  return 'skewX('+Math.random()*100+'deg) rotate('+rand/10+'deg) translate(0px,'+rand/100+'px)';  
 });
 
-	$('*').not( "body" ).css("-ms-transform", function () {
+	$('.grid').find('*').not( "body" ).css("-ms-transform", function () {
   var rand = (Math.random() * 3600*2) -(3600);
-  return 'rotate('+rand/10+'deg) translate(0px,'+rand/100+'px)';  
+  return 'skewX('+Math.random()*100+'deg) rotate('+rand/10+'deg) translate(0px,'+rand/100+'px)';  
 });
 
-	$('*').not( "body" ).css("-o-transform", function () {
+	$('.grid').find('*').not( "body" ).css("-o-transform", function () {
   var rand = (Math.random() * 3600*2) -(3600);
-  return 'rotate('+rand/10+'deg) translate(0px,'+rand/100+'px)';  
+  return 'skewX('+Math.random()*100+'deg) rotate('+rand/10+'deg) translate(0px,'+rand/100+'px)';  
 });
 
-	$('*').not( "body" ).css("transform", function () {
+	$('.grid').find('*').not( "body" ).css("transform", function () {
   var rand = (Math.random() * 3600*2) -(3600);
-  return 'rotate('+rand/10+'deg) translate(0px,'+rand/100+'px)';  
+  return 'skewX('+Math.random()*100+'deg) rotate('+rand/10+'deg) translate(0px,'+rand/100+'px)';  
 });
 }
 
